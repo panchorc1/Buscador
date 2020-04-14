@@ -5,3 +5,22 @@
 .profile {
   margin-top: 10px;
 }
+
+#negrita{
+color: black;
+}
+
+
+
+/* <!-- Pruebas de etiquetas con estilos en CSS -->
+h1{
+color: black;
+}
+
+#hola{
+color: black;
+}
+
+.hola{
+color: black;
+} */
