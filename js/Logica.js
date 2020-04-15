@@ -34,5 +34,20 @@ $(document).ready(function () {
           `);
                         });
                     });
+                    $('#profile').html(`
+        <div class="card border-primary mb-3" style="max-width: 100rem;">
+          <div class="card-header"><h3>${user.name}</h3></div>
+          <div class="card-body">
+            <div class="row">
+            <div class="col-md-3">
+              <img class="img-thumbnail avatar" src="${user.avatar_url}">
+              <a target="_blank" class="btn btn-primary btn-block" href="${user.html_url}">View Profile</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="page-header">Lista de Repositorios</h3>
+        <div id="repos"></div>
+        `);
                 });
             });
