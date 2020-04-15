@@ -33,6 +33,7 @@ $(document).ready(function () {
               </div>
             </div>
           `);
+                        });
                     }); // Seccion del diseño donde se mostrara toda la informacion del usuario
                     $('#profile').html(`
         <div class="card border-primary mb-3" style="max-width: 100rem;">
