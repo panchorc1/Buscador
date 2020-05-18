@@ -9,11 +9,24 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.4/jspdf.plugin.autotable.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script scr=">https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+-->
+    
+    <!-- Hace referencia al archivo JavaScript -->
+    <script src="/js/Logica.js"></script>
+    <script src="/js/CV.js"></script>
     <!-- Titulo que va a aparecer en la pestaña del navegador -->
     <title>Portafolio de Perfiles de Github</title>
 </head>
 
-<body>
+<body id="Contenido">
    <!-- Barra de navegacion que contiene el titulo principal -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
@@ -24,6 +37,7 @@
             </div>
         </div>
     </nav>
+<button id="getPDF" onclick="getPDF()">Download PDF</button>
 <!-- Contenedor que almacenara el toda la informacion del usuario buscado -->
     <div class="container">
         <div class="searchContainer">
@@ -35,13 +49,13 @@
         <!-- Div donde se mostrara la tarjeta que se codifico en el JavaScript -->
         <div id="profile"></div>
     </div>
-    <!-- Librerias necesarias para JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- Hace referencia al archivo JavaScript -->
-    <script src="/js/Logica.js"></script>
-</body></html>
+ 
+</body>
+   <!-- Librerias necesarias para JavaScript -->
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>-->
+   
+
+</html>
 
 
 
